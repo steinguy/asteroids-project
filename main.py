@@ -1,6 +1,7 @@
 import pygame
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from logger import log_state
+from player import Player
 
 def main():
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
@@ -22,6 +23,8 @@ def main():
         pygame.display.flip()
         clock.tick(60)
         dt = clock.tick(60) / 1000
+    
+    "player" = Player()
         
 
 
